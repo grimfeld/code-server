@@ -34,6 +34,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # -----------
 
+RUN code-server --install-extension dnlytras.nord-wave
+
 # Port
 ENV PORT=8080
 
