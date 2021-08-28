@@ -34,6 +34,10 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # -----------
 
+RUN sudo apt-get install nodejs npm
+
+RUN npm install --global yarn
+
 RUN code-server --install-extension dnlytras.nord-wave
 
 # Port
