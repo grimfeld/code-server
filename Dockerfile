@@ -33,8 +33,8 @@ RUN sudo chown -R coder:coder /home/coder/.local
 # COPY deploy-container/myTool /home/coder/myTool
 
 # -----------
-
-RUN sudo apt-get install nodejs npm
+RUN sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+RUN sudo apt-get install -y nodejs npm
 
 RUN npm install --global yarn
 
