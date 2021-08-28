@@ -38,7 +38,10 @@ RUN sudo apt-get install -y nodejs
 
 RUN sudo npm install --global yarn
 
-RUN code-server --install-extension dnlytras.nord-wave dbaeumer.vscode-eslint eamodio.gitlens esbenp.prettier-vscode
+RUN code-server --install-extension dnlytras.nord-wave
+RUN code-server --install-extension dbaeumer.vscode-eslint
+RUN code-server --install-extension eamodio.gitlens
+RUN code-server --install-extension esbenp.prettier-vscode
 
 # Port
 ENV PORT=8080
