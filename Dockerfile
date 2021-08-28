@@ -44,7 +44,7 @@ RUN code-server --install-extension dnlytras.nord-wave
 RUN code-server --install-extension dbaeumer.vscode-eslint
 RUN code-server --install-extension eamodio.gitlens
 RUN code-server --install-extension esbenp.prettier-vscode
-RUN code-server --install-extension shan.code-settings-sync
+# RUN code-server --install-extension shan.code-settings-sync
 
 # Port
 ENV PORT=8080
