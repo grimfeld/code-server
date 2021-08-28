@@ -34,9 +34,9 @@ RUN sudo chown -R coder:coder /home/coder/.local
 
 # -----------
 RUN sudo curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
-RUN sudo apt-get install -y nodejs npm
+RUN sudo apt-get install -y nodejs
 
-RUN npm install --global yarn
+# RUN npm install --global yarn
 
 RUN code-server --install-extension dnlytras.nord-wave
 
